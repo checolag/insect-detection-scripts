@@ -1,0 +1,63 @@
+# Training and validation configuration file
+
+## project settings
+experiment_name: "experiment1" # Experiment name
+experiments_path: "experiments" 
+
+## training settings
+epochs: 300
+batch_size: 16
+image_size: 1280
+model_type: "yolov8s"
+workers: 8
+project_name: "yolo8_training"
+single_cls: False
+cache: False
+optimizer: 'auto'
+seed: 0
+lr_init: 0.01
+lr_end: 0.01
+
+### default data augmentation values
+hsv_h: 0 
+hsv_s: 0.7
+hsv_v: 0.4
+degrees: 0.0
+translate: 0.1
+scale: 0.5
+shear: 0.0
+perspective: 0.0
+flipud: 0.0
+fliplr: 0.5
+mosaic: 1.0
+mixup: 0.0
+copy_paste: 0.0
+erasing: 0.4
+crop_fraction: 1.0
+auto_augment: 'randaugment' 
+
+## validation settings
+confidence_score: 0.3
+save_json: True
+
+## predict
+save_txt: True
+save_conf: True
+save_crop: True
+show_labels: True
+show_conf: True
+show_boxes: True
+
+# detectron2
+2_experiment_name: "faster_rcnn_training"
+2_model: 'COCO-Detection/faster_rcnn_R_50_FPN_3x.yaml'
+# 2_eval_period: 500
+2_workers: 8
+2_batch_size: 16
+2_base_lr: 0.01 # same as YOLO
+2_iterations: 4000
+2_device: "cuda"
+2_trainer: "new" # "default" # "my"
+2_check_period: 500
+2_conf_score: 0.3
+2_seed: 42

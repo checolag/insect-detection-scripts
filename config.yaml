@@ -1,0 +1,11 @@
+# Experiment configuration file
+
+## project settings
+experiment_name: "experiment1" # directory of the single test
+experiments_path: "experiments" # directory of the experiments
+image_path: "dataset_images" # dataset path
+
+## split
+insect_id: "0,1"  # you can choose between "0" (only Scaphoideus), "1" (only Orientus), "0,1" (both ST and OI),
+enhancement: "crop" # type of enhancements
+ksplit: 10 # number of splits in k-fold cross validation
