@@ -37,3 +37,9 @@ python kfold_validation.py training_val_config.yaml
 ```
 python kfold_detectron.py training_val_config.yaml
 ```
+
+## Contact
+
+If you encounter any issues with the project or for questions/suggestions, you can reach out to us at:
+- Email: [giorgio.checola@fmach.it](mailto:giorgio.checola@fmach.it)
+- Research and Innovation Centre, Digital Agriculture Unit, Fondazione Edmund Mach, Via Edmund Mach, 1, 38098 San Michele all'Adige TN, Italy.
