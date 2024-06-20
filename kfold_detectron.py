@@ -39,7 +39,6 @@ def main(config_path):
     logging.info("Training...")
     yamls = list(experiment_path.glob("split*/*.yaml"))
     yamls = sorted([str(i) for i in yamls], key=utils.mixedsort)
-    # print(yamls)
     
     for i in range(len(yamls)):
         logging.info(f"Training for yaml file: {yamls[i]}")
