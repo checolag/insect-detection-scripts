@@ -3,10 +3,10 @@ This repository contains scripts to run YOLOv8 and Detectron2 for detecting inse
 
 `config.yaml`: This configuration file sets up the parameters for an experiment involving k-fold cross-validation for object detection tasks. It includes settings for project directories, dataset paths, insect IDs, image enhancement types, and the number of splits for k-fold cross-validation.
 
-`config_template.yaml`
-`config_template_0.yaml`
-`config_template_1.yaml`
-`config_template_0+1.yaml`
+`config_template.yaml`, 
+`config_template_0.yaml`, 
+`config_template_1.yaml`, 
+`config_template_0+1.yaml`: 
 These YAML configuration files provide basic information required for an object detection model to understand the classes it will be working with.
 
 `training_val_config`: This configuration file sets up the parameters for training and validation for object detection models using YOLOv8 and Detectron2 frameworks. It includes settings for project directories, training parameters, data augmentation values, validation settings, and specific configurations for Detectron2. Key functionalities include image cropping, brightness adjustment, YOLO model training and evaluation, and data split for training and validation using YAML configuration files.
