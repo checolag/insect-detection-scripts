@@ -139,7 +139,7 @@ portalocker==2.8.2
 preshed==3.0.9
 prometheus-client==0.18.0
 prompt-toolkit==3.0.39
-protobuf==4.25.6
+protobuf==6.33.5
 psutil==5.9.6
 ptyprocess==0.7.0
 pure-eval==0.2.2
